@@ -35,7 +35,7 @@ php artisan serve
 
 В отчёте: URL целиком, объяснение, почему сработало, как исправить (экранирование, Content-Type, CSP).
 
-![](Reflected XXS.png)
+![PNG](Reflected XXS.png)
 
 ### 2. Stored XSS
 
