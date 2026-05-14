@@ -35,7 +35,7 @@ php artisan serve
 
 В отчёте: URL целиком, объяснение, почему сработало, как исправить (экранирование, Content-Type, CSP).
 
-![PNG](Reflected XXS.png)
+![PNG](/websec-lab/Reflected%20XSS.png)
 
 ### 2. Stored XSS
 
