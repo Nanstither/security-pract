@@ -25,7 +25,7 @@ class LabAuthController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended('/');
+        return redirect()->intended('/home');
     }
 
     public function logout(Request $request)
